@@ -21,7 +21,7 @@
 <body>
 <main>
 <h1>Skim Browser Privacy Policy</h1>
-<p class="date">Last updated October 18, 2026</p>
+<p class="date">Last updated October 31, 2026</p>
 
 <p>I built Skim because I wanted a browser that doesn't watch what I do. This page explains, in plain words, what Skim keeps on your computer and when it talks to the internet.</p>
 
@@ -38,21 +38,29 @@
     <tr><td>Cookies, cache and site data</td><td>Keeping you signed in to websites and making pages load faster</td><td>Settings, then Clear browsing data, or the site panel in the address bar</td></tr>
     <tr><td>Settings and site permissions</td><td>Remembering your choices</td><td>Settings</td></tr>
     <tr><td>Your open tabs</td><td>So you can pick up where you left off</td><td>Settings, under On startup</td></tr>
+    <tr><td>Saved passwords</td><td>Filling in your logins. They're encrypted with your Windows account before they're saved.</td><td>Settings, then Passwords</td></tr>
+    <tr><td>Extensions you install</td><td>Running the extensions you added from the Chrome Web Store</td><td>The Extensions page</td></tr>
+    <tr><td>Profiles</td><td>Each profile keeps its own copy of everything above</td><td>Settings, then Profiles. Deleting a profile removes all of its data.</td></tr>
     <tr><td>Shields counts</td><td>The number of blocked ads and trackers shown on the new tab page</td><td>Uninstalling Skim</td></tr>
   </tbody>
 </table>
-<p>Private windows keep everything in memory and throw it away when you close them. If you'd like, Skim can also wipe your cookies, history and cache every time you quit. You'll find that option in Settings under Shields &amp; privacy.</p>
+<p>Private and Tor windows keep everything in memory and throw it away when you close them. If you turn on "Stay signed in to sites in private windows", a private window starts with a copy of your profile's cookies; nothing from the private window is copied back. If you'd like, Skim can also wipe your cookies, history and cache every time you quit. You'll find that option in Settings under Shields &amp; privacy.</p>
 
 <h2>When Skim goes online</h2>
-<p>Apart from loading the websites you open, Skim only connects to the internet for two things:</p>
+<p>Apart from loading the websites you open, Skim only connects to the internet for these things:</p>
 <ul>
   <li><strong>Search suggestions.</strong> As you type in the address bar, your text goes to the search engine you picked (DuckDuckGo unless you change it) so it can suggest searches. Your cookies aren't sent along. You can switch suggestions off in Settings under Search.</li>
   <li><strong>Blocklist updates.</strong> Every so often Skim downloads the public ad and tracker lists it uses, such as EasyList and EasyPrivacy, from Ghostery's servers. Nothing about you is included in these downloads.</li>
+  <li><strong>Extensions.</strong> Only if you install extensions: Skim downloads them from Google's Chrome Web Store servers and checks those servers for updates every few hours. Google sees the extension IDs being checked, as it does for Chrome.</li>
+  <li><strong>Tor windows.</strong> Only when you open one: Skim starts the Tor client that comes with it, which connects to the Tor network. Traffic in that window goes through Tor. Tor stops when you close the last Tor window.</li>
+  <li><strong>Check my IP.</strong> Only when you press this button in the proxy settings: Skim asks api.ipify.org which IP address websites see, and shows you the answer.</li>
 </ul>
+<p>If you set up a proxy for a profile, that profile's traffic goes through the proxy you chose, under that provider's own policy.</p>
+<p>Importing from another browser only reads that browser's files on your PC. Nothing is uploaded.</p>
 <p>Skim also sends the Global Privacy Control signal to every site you visit, which tells them you don't want your data sold or shared.</p>
 
 <h2>Websites and search engines</h2>
-<p>The websites you visit have their own privacy policies and may still collect information about you. Shields stop a lot of trackers and third party cookies, but honestly no browser can block everything. Searches are handled by your chosen search engine under its own policy.</p>
+<p>The websites you visit have their own privacy policies and may still collect information about you. Shields stop a lot of trackers and third party cookies, but honestly no browser can block everything. Searches are handled by your chosen search engine under its own policy. Extensions you install come from their own developers, can read the pages you visit if you give them that permission, and follow their own privacy policies.</p>
 
 <h2>Children</h2>
 <p>Skim is a general purpose browser. It doesn't collect information from anyone, children included.</p>
